@@ -44,7 +44,7 @@ function print_state(state::GameState, candidate, iteration, config, n_candidate
     if config.debug
         pretty_print(state.constraints)
         @printf(
-            "Number of Candidates: %d / %d [.3f%%]\n",
+            "Number of Candidates: %d / %d [%.3f%%]\n",
             length(state.candidates),
             n_candidates,
             100 * length(state.candidates) / n_candidates,
