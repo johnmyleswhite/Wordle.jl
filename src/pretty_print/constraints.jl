@@ -26,7 +26,7 @@ function pretty_print(constraints::Constraints)
             @printf(" * %s = 0\n", c)
         end
     end
-    @printf("\n\n")
+    @printf("\n")
 
     @printf("* Local Ban:\n")
     for i in 1:5
@@ -36,6 +36,5 @@ function pretty_print(constraints::Constraints)
             end
         end
     end
-    @printf("\n\n")
-    @printf("==========================================\n")
+    @printf("==========================================\n\n")
 end
